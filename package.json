@@ -1,0 +1,16 @@
+{
+  "name": "homebridge-gpio-onoff",
+  "version": "1.0.0",
+  "description": "GPIO onoff plugin",
+  "license": "ISC",
+  "keywords": [
+    "homebridge-plugin"
+  ],
+  "dependencies": {
+    "onoff": "^1.1.1"
+  },
+  "engines": {
+    "node": ">=0.12.0",
+    "homebridge": ">=0.2.0"
+  }
+}
