@@ -1,7 +1,7 @@
 {
   "name": "homebridge-gpio-onoff",
-  "version": "1.0.0",
-  "description": "GPIO onoff plugin",
+  "version": "0.1.0",
+  "description": "GPIO onoff plugin for Homebridge: https://github.com/nfarina/homebridge",
   "license": "ISC",
   "keywords": [
     "homebridge-plugin"
@@ -16,5 +16,10 @@
   "engines": {
     "node": ">=0.12.0",
     "homebridge": ">=0.2.0"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/krisbreuker/homebridge-gpio-onoff/issues"
+  },
+  "homepage": "https://github.com/krisbreuker/homebridge-gpio-onoff#readme",
+  "main": "index.js"
 }
