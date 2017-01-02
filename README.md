@@ -4,7 +4,7 @@ Supports triggering General Purpose Input Output (GPIO) pins on platforms suppor
 
 ## Requirements
 -  [Homebridge](https://github.com/nfarina/homebridge) - _HomeKit support for the impatient_
--  [gpio-admin](https://www.npmjs.com/package/onoff) - _Reading and writing GPIO pins and listening for changes_
+-  [onoff](https://www.npmjs.com/package/onoff) - _Reading and writing GPIO pins and listening for changes_
 
 ## Installation
 1.  Install Homebridge using `npm install -g homebridge`
