@@ -105,6 +105,14 @@ GPIOOnOffAccessory.prototype.readGPIO = function(callback)
 GPIOOnOffAccessory.prototype.writeGPIO = function(value, callback)
 {
   let gpioValue = this.characteristicToGPIO(value);
+
+  if(typeof(gpioValue) === "boolean"){
+    if(gpioValue)
+      gpioValue = 1;
+    else
+      gpioValue = 0;
+  }
+
   this.log(`Writing Characteristic value ${value} as ${gpioValue}`);
   this.sensor.write(gpioValue, err =>
   {
@@ -112,7 +120,7 @@ GPIOOnOffAccessory.prototype.writeGPIO = function(value, callback)
       callback(err);
     else
     {
-      this.log("Wrote GPIO value");
+      this.log("Wrote GPIO value: "+ gpioValue);
       callback();
     }
   });
