@@ -106,7 +106,7 @@ GPIOOnOffAccessory.prototype.writeGPIO = function(value, callback)
 {
   let gpioValue = this.characteristicToGPIO(value);
   this.log(`Writing Characteristic value ${value} as ${gpioValue}`);
-  this.sensor.write(gpioValue, err =>
+  this.sensor.write(value, err =>
   {
     if (err)
       callback(err);
